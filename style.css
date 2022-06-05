@@ -1,0 +1,97 @@
+/* bcg-hero= #2F303A 
+   accent= #2196F3
+   text= #757575
+   title= #212121
+   */
+:root {
+    --bcg-dark: #2F303A;
+    --color-t: #212121;
+    --text-color: #757575;
+    --accent: #2196F3;
+    --white: #FFF;
+}
+body {
+    background-color: #e5e5e5;
+    color: var(--text-color);
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+}
+ul {
+    list-style: none;
+}
+h2, h3, span {
+    color: var(--color-t);
+}
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* header */
+
+.logo, .type {
+    font-family: Raleway; 
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1;
+}
+.logo, 
+.active,
+nav a:hover,
+nav a:focus,
+.contacts a:hover,
+.contacts a:focus
+ {
+    color: var(--accent);
+}
+.type {
+    color: #000000;
+}
+header ul {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+}
+nav a {
+    color: var(--color-t);
+}
+
+/* hat */
+
+.hat {
+    height: 600px;
+    color: var(--white);
+    background-color: var(--bcg-dark);
+    text-align: center;
+    text-transform: uppercase;
+}
+h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    padding-top: 200px;
+}
+.hat>button {
+    color: var(--white);
+    background-color: var(--accent);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* peculiarities */
+
+h3 {
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+/* What are we doing */
+
+h2 {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+}
