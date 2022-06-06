@@ -9,6 +9,7 @@
     --text-color: #757575;
     --accent: #2196F3;
     --white: #FFF;
+    --button-color: #F5F4FA;
 }
 body {
     background-color: #e5e5e5;
@@ -49,7 +50,12 @@ nav a:focus,
 .type {
     color: #000000;
 }
+header {
+    display: flex;
+    align-items: baseline;
+}
 header ul {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
@@ -94,4 +100,53 @@ h2 {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.2;
+}
+
+/* our team */
+
+.our-team h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.our-team p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--bcg-dark);
+    height: 252px;
+}
+.footer .type,
+.adres {
+    color: var(--white);
+}
+address li {
+    font-style: normal;
+}
+
+/* Portfolio *//* Portfolio */
+
+.port {
+    background-color: var(--white);
+}
+.filters button {
+    background-color: var(--button-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.galary h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+}
+.galary p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
 }
