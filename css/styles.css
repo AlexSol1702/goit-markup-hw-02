@@ -71,7 +71,7 @@ nav a {
     line-height: 1.1;
 }
 .logo, 
-.active,
+.current,
 nav a:hover,
 nav a:focus,
 .contacts a:hover,
