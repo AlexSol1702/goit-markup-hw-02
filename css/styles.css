@@ -8,19 +8,19 @@
     --color-t: #212121;
     --text-color: #757575;
     --accent: #2196F3;
-    --white: #FFF;
+    --primary-cl: #FFFFFF;
     --button-color: #F5F4FA;
 }
 body {
-    width: 1600px;
-    background-color: #e5e5e5;
+    
+    background-color: var(--primary-cl);
     color: var(--text-color);
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 2;
+    line-height: 1.7;
 }
-.list-free {
+.list {
     list-style: none;
     padding-left: 0;
 }
@@ -33,37 +33,23 @@ body {
 
 /* header */
 
-header {
-    height: 80px;
-    display: flex;
-    align-items: center;
+.header>.logotype {
+    margin: 24px 93px 72px 215px;
 }
 
-header ul {
-    display: flex;
-    justify-content: space-between;
+header .nav-list,
+header .contacts {
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
 }
-nav>ul {
-    width: 294px;
-    height: 16px;
-    margin-left: 93px;
-}
-.contacts {
-    width: 310px;
-    height: 16px;
-    margin-left: 331px;
-}
-nav a {
+
+
+.nav-list a {
     color: var(--color-t);
 }
-.logotype {
-    width: 145px;
-    height: 31px;
-    margin-left: 215px;
-}
+
 .logo, .type {
     font-family: Raleway, sans-serif; 
     font-weight: 700;
@@ -71,7 +57,7 @@ nav a {
     line-height: 1.1;
 }
 .logo, 
-.current,
+.nav-list .current,
 nav a:hover,
 nav a:focus,
 .contacts a:hover,
@@ -95,6 +81,7 @@ address a:hover
     text-transform: uppercase;
 }
 h1 {
+    color: var(--primary-cl);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -103,22 +90,26 @@ h1 {
     margin-bottom: 30px;
 }
 .hat>button {
-    color: var(--white);
+    color: var(--primary-cl);
     background-color: var(--accent);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     cursor: pointer;
 }
+.hat>button:hover {
+    background-color: #188CE8;
+} 
+.filters .current,
+.filters button:hover,
+.filters button:focus {
+    color: var(--primary-cl);
+    background-color: var(--accent);
+}
 
 /* peculiarities */
 
-.peculiarities ul {
-    width: 1170px;
-    height: 100px;
-    margin: 94px auto;
-    display: flex;
-}
+
 .peculiarities li {
     width: 270px;
     height: 101px;
@@ -127,40 +118,31 @@ h1 {
     color: var(--color-t);
     font-size: 14px;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.2;
     margin-top: 0;
     margin-bottom: 10px;
 }
-.peculiarities p {
-    line-height: 1.7;
-}
+
 
 /* What are we doing */
 
-.doing {
-    width: 1170px;
-    height: 386px;
-    margin: 0 auto 94px;
-}
+
+
 .doing>h2 {
     color: var(--color-t);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
-    text-align: center;
-    margin: 0 auto 50px;
+    
+    
 }
-.doing ul {
-    height: 294px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-}
+
+
 
 /* our team */
 
 .team {
-    height: 648px;
+    background-color: var(--button-color);
 }
 .team>h2 {
     color: var(--color-t);
@@ -170,13 +152,7 @@ h1 {
     text-align: center;
     margin: 188px 0 50px;
 }
-.team>ul {
-    width: 1170px;
-    height: 368px;
-    margin: 0 auto 94px;
-    display: flex;
-    justify-content: space-between;
-}
+
 .team h3 {
     color: var(--color-t);
     font-size: 16px;
@@ -195,15 +171,14 @@ h1 {
     background-color: var(--bcg-dark);
     height: 252px;
 }
-.foot .logotype {
-    padding-top: 60px;
-    padding-bottom: 6px;
+.foot>.logotype {
+    padding: 60px 1240px 20px 215px;
 }
 .foot .type,
 .place {
-    color: var(--white);
+    color: var(--primary-cl);
 }
-address>ul {
+address>.list {
     width: 231px;
     height: 81px;
     margin-left: 215px;
@@ -215,9 +190,7 @@ address li {
 
 /* Portfolio *//* Portfolio */
 
-.page {
-    background-color: var(--white);
-}
+
 .page main {
     width: 1170px;
     height: 1360px;
@@ -261,6 +234,6 @@ address li {
 }
 .galary p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.8;
 }
