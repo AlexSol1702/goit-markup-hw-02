@@ -53,6 +53,7 @@ body {
 }
 
 .current,
+.nav-link.current,
 .nav-link:hover,
 .nav-link:focus,
 .contact-link:focus,
@@ -92,7 +93,9 @@ body {
     font-size: 14px;
     line-height: 1.14;
 }
-
+.nav-link {
+    color: var(--titl-cl);
+}
 .contact-link {
     color: inherit;
 }
